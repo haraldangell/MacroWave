@@ -5,26 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Macrowave.org – HWFT Foundation</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- CodeGrid/AOS-style animations -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link href="./site.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./site.css">
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans">
-  <!-- Hero / Lead Paragraph -->
-  <header class="bg-gradient-to-r from-purple-600 via-blue-600 to-indigo-700 text-white text-center py-20" data-aos="fade-down">
+  <!-- Navigation -->
+  <nav class="bg-white shadow fixed top-0 w-full z-10">
+    <div class="max-w-6xl mx-auto px-4 flex justify-between items-center py-3">
+      <a href="#" class="font-bold text-xl text-indigo-700">Macrowave</a>
+      <div class="space-x-6 text-gray-600">
+        <a href="#vision" class="hover:text-indigo-700">Vision</a>
+        <a href="#approach" class="hover:text-indigo-700">Approach</a>
+        <a href="#contact" class="hover:text-indigo-700">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Lead Paragraph -->
+  <header class="bg-gradient-to-r from-purple-600 via-blue-600 to-indigo-700 text-white text-center py-24 mt-14" data-aos="fade-down">
     <img src="./images/logo.png" alt="Macrowave Logo" class="mx-auto w-24 mb-6 animate-pulse" />
     <h1 class="text-4xl md:text-5xl font-extrabold">Harnessing Wave Fields to Redefine Science</h1>
-    <p class="mt-4 text-lg max-w-2xl mx-auto">Macrowave.org is the official platform of the HWFT Foundation, pioneering research at the intersection of wave physics, AI, and human understanding.</p>
+    <p class="mt-4 text-lg max-w-2xl mx-auto">
+      Macrowave.org is the HWFT Foundation’s platform for pioneering wave physics research, bridging AI and human understanding.
+    </p>
   </header>
 
-  <!-- Relevant Image Section (Descriptive) -->
+  <!-- Relevant Image -->
   <section class="py-16 px-6 text-center bg-white" data-aos="fade-up">
     <h2 class="text-3xl font-bold mb-4">Our Vision in Motion</h2>
     <p class="text-lg max-w-2xl mx-auto mb-8">
-      The imagery of Macrowave reflects harmonic resonance — from quantum particles to galaxies. 
-      Our visual identity mirrors our research: blending the elegance of natural waveforms with advanced computational modeling.
+      The symbolic wave imagery reflects harmonic resonance — from quantum particles to galaxies — mirroring our unified research on wave dynamics.
     </p>
-    <img src="images/macrowave.png" alt="Wave Interference" class="mx-auto rounded-lg shadow-lg">
+    <img src="./images/macrowave.png" alt="Symbolic Wave" class="mx-auto rounded-lg shadow-lg">
   </section>
 
   <!-- Personal Experience & Testimonial -->
@@ -32,46 +47,44 @@
     <div class="max-w-4xl mx-auto text-center">
       <h2 class="text-3xl font-bold mb-4">From Vision to Foundation</h2>
       <p class="text-lg mb-6">
-        I founded the HWFT Foundation after years of bridging law enforcement, technology, and theoretical physics. 
-        My goal is to transform deep wave-field insights into real-world applications — energy, AI, and beyond.
+        I founded the HWFT Foundation after bridging law enforcement, technology, and theoretical physics. Our goal is to translate deep wave-field insights into real-world breakthroughs — energy, AI, and beyond.
       </p>
       <blockquote class="border-l-4 border-blue-600 pl-4 italic text-gray-700">
-        "HWFT challenged my understanding of physics and opened doors to explore resonance in ways I never imagined." – Research Collaborator
+        “HWFT challenged my understanding of physics and opened doors to explore resonance in ways I never imagined.” – Research Collaborator
       </blockquote>
     </div>
   </section>
 
-  <!-- Main Body: Detailed Product/Service Info -->
-  <section class="py-20 px-6 bg-white" data-aos="fade-up">
+  <!-- Main Body -->
+  <section id="approach" class="py-20 px-6 bg-white" data-aos="fade-up">
     <div class="max-w-5xl mx-auto text-center">
       <h2 class="text-3xl font-bold mb-4">The Macrowave Approach</h2>
       <p class="text-lg mb-8">
-        Macrowave.org serves as a research hub for **Harald Wave Field Theory (HWFT)** — exploring wave dynamics across quantum and cosmological scales. 
-        Our work spans **Emotional-Intent Intelligence (EII)**, energy resonance applications, and theoretical unification of physics.  
-        We provide resources in multiple formats: peer-reviewed papers, visual simulations, and open-source tools.  
-        Contact us to collaborate or access our research library.
+        Macrowave.org serves as a hub for <strong>Harald Wave Field Theory (HWFT)</strong>, exploring wave dynamics across quantum and cosmological scales. Our work spans <strong>Emotional-Intent Intelligence (EII)</strong>, energy resonance applications, and theoretical unification of physics. We provide research papers, simulations, and open-source tools.  
+        <br><br>
+        Collaborate with us to advance next-generation breakthroughs in energy, health, and AI.
       </p>
-      <a href="mailto:contact@macrowave.org" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition">Contact Us</a>
+      <a id="contact" href="mailto:contact@macrowave.org" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition">Contact Us</a>
     </div>
   </section>
-<section id="vision" class="py-20 bg-gray-900 text-white">
-  <div class="container mx-auto px-6 text-center animate-fadeIn">
-    <h2 class="text-4xl font-bold mb-6">Our Vision</h2>
-    <p class="max-w-2xl mx-auto text-lg">
-      At Macrowave Foundation, our vision is to uncover and apply the principles of HWFT to
-      drive next-generation breakthroughs in energy, health, and technology, fostering a new
-      era of sustainable innovation.
-    </p>
-  </div>
-</section>
+
+  <!-- Vision Section -->
+  <section id="vision" class="py-20 bg-gray-900 text-white">
+    <div class="container mx-auto px-6 text-center" data-aos="fade-in">
+      <h2 class="text-4xl font-bold mb-6">Our Vision</h2>
+      <p class="max-w-2xl mx-auto text-lg">
+        At Macrowave Foundation, our vision is to apply HWFT principles to drive sustainable innovation in energy, health, and technology — shaping a future where resonance powers progress.
+      </p>
+    </div>
+  </section>
 
   <!-- Discussion Question -->
   <section class="py-16 bg-gradient-to-r from-indigo-600 to-purple-600 text-white text-center" data-aos="zoom-in">
     <h2 class="text-3xl font-bold mb-4">Join the Conversation</h2>
     <p class="text-lg mb-6 max-w-2xl mx-auto">
-      What real-world problem do you think wave-based physics like HWFT should tackle first — energy, AI, or space travel?
+      What real-world challenge should HWFT tackle first — energy, AI, or space travel?
     </p>
-    <a href="mailto:contact@macrowave.org?subject=Discussion%20Response" 
+    <a href="mailto:contact@macrowave.org?subject=Discussion%20Response"
        class="bg-white text-indigo-700 font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-100 transition">
        Share Your Thoughts
     </a>
@@ -82,13 +95,7 @@
     © 2025 HWFT Foundation – Macrowave.org | All Rights Reserved
   </footer>
 
-  <!-- AOS JS for animations -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 800,
-      once: true
-    });
-  </script>
+  <script>AOS.init({ duration: 800, once: true });</script>
 </body>
 </html>
